@@ -1,0 +1,15 @@
+.start {
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+h1 {
+    margin-top: 80px;
+    text-align: center;
+}
+
+div {
+    background: none;
+}

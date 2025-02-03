@@ -1,0 +1,34 @@
+.recipes-list-name {
+    margin-top: 35px;
+}
+
+.recipes-list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.recipes-list-link {
+    font-size: 20px;
+    color: black;
+    display: flex;
+    margin: 5px;
+}
+
+.recipe {
+    display: flex;
+    gap: 20px;
+}
+
+.recipe-tags {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+.recipes-link {
+    color: black;
+    text-align: center;
+}
+
