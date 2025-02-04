@@ -10,15 +10,14 @@ const RecipesList = () => {
     return (
         <div className='recipes-list'>
             {recipes.map((recipe) => <div className='recipe' key={recipe.id}>
-                <div key={recipe.id}>
-                    <Link className='recipes-list-link'
-                          key={recipe.id}
-                          to={generatePath(AppRoutes.recipeId, {recipeId: recipe.id})}
-                          relative="route">
-                        {recipe.name}
-                    </Link></div>
+                <div className='recipes-list-link'><Link
+                    key={recipe.id}
+                    to={generatePath(AppRoutes.recipeId, {recipeId: recipe.id})}
+                    relative="route">
+                    {recipe.name}
+                </Link></div>
                 <div className='recipe-tags'>Tags:{recipe.tags.map(((tag, index) => <div key={index}>
-                    <Link className='recipes-link' to={generatePath(AppRoutes.recipeTag, {tagFind: tag})}
+                    <Link to={generatePath(AppRoutes.recipeTag, {tagFind: tag})}
                           relative="route">{tag}</Link>/</div>))}</div>
             </div>)}
         </div>

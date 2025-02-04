@@ -39,7 +39,7 @@ export const refresh = async () => {
     const {data: {accessToken, refreshToken}} = await axiosInstance.post<ITokenPair>('/refresh',
         {
             refreshToken: iUserWithTokens.refreshToken,
-            expiresInMin: 30,
+            expiresInMin: 1,
         })
     iUserWithTokens.accessToken = accessToken;
     iUserWithTokens.refreshToken = refreshToken;

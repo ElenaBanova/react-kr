@@ -21,7 +21,7 @@ const UseLogin = () => {
         login({
             username: formDataProps.username,
             password: formDataProps.password,
-            expiresInMins: 30,
+            expiresInMins: 1,
         });
     };
 

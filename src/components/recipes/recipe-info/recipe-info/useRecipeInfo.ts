@@ -17,6 +17,7 @@ const UseRecipeInfo = () => {
             dispatch(recipeSliceActions.loadRecipe(recipeId));
             dispatch(userSliceActions.loadUserId(recipeId));
         }
+
     }, [recipeId])
 
     return {userId, recipe}

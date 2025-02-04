@@ -6,7 +6,6 @@ import '../users-list-css/usersList.css';
 
 const UsersList = () => {
     const users = UseUsersList();
-
     return (
         <div className='users-list'>
             {users.map(user =>

@@ -1,4 +1,5 @@
 import RecipesList from "../components/recipes/recipes-list/recipes-list/RecipesList.tsx";
+import Pagination from "../components/pagination/pagination/Pagination.tsx";
 
 
 const RecipesPage = () => {
@@ -10,6 +11,7 @@ const RecipesPage = () => {
                 value.</h3>
             <h3>Also by selecting a recipe you will go to its detailed description.</h3>
             <RecipesList/>
+            <Pagination/>
         </div>
     );
 };

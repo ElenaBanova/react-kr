@@ -11,9 +11,9 @@ type RecipeSliceType = {
 };
 
 const loadRecipes = createAsyncThunk('recipeSlice/loadRecipes',
-    async (_, thunkAPI) => {
+    async (page:string, thunkAPI) => {
         try {
-            return thunkAPI.fulfillWithValue(await loadAuthRecipes());
+            return thunkAPI.fulfillWithValue(await loadAuthRecipes(page));
         } catch (e) {
             console.log(e);
             return thunkAPI.rejectWithValue('error loading recipes');
